@@ -24,7 +24,7 @@ use Servicos\Models\Periodo\ServicosIndexPeriodo;
 
 class ContratoFormRequest extends FormRequest
 {
-    public string $documento;
+    public string $documento = '';
 
     /**
      * Determine if the user is authorized to make this request.
@@ -82,12 +82,12 @@ class ContratoFormRequest extends FormRequest
     {
         return new ContratoDTO
         ([
-            'id'             => $this->id,
-            'id_user'        => auth()->id(),
-            'id_propriedade' => $this->propriedade,
+            'id'             => (int) $this->id,
+            'id_user'        => (int) auth()->id(),
+            'id_propriedade' => (int) $this->propriedade,
             'email'          => $this->email,
             'nome'           => $this->nome,
-            'id_tipo_pessoa' => $this->tipo_pessoa,
+            'id_tipo_pessoa' => (int) $this->tipo_pessoa,
             'documento'      => $this->documento,
         ]);
     }

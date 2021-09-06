@@ -106,6 +106,91 @@
       <path value="$PROJECT_DIR$/laravel/vendor/facade/ignition-contracts" />
     </include_path>
   </component>
+  <component name="PhpInterpreters">
+    <interpreters>
+      <interpreter id="00b1ef3c-aaba-4118-b5f9-e72ec92bdbed" name="app" home="docker-compose://DATA" debugger_id="php.debugger.XDebug">
+        <remote_data INTERPRETER_PATH="php" HELPERS_PATH="/opt/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" DOCKER_ACCOUNT_NAME="Docker" DOCKER_COMPOSE_SERVICE_NAME="app" DOCKER_REMOTE_PROJECT_PATH="/opt/project">
+          <type_data command="RUN" />
+          <dockerComposeConfigurationPaths>
+            <item value="$PROJECT_DIR$/docker-compose.yml" />
+          </dockerComposeConfigurationPaths>
+          <envs />
+        </remote_data>
+      </interpreter>
+    </interpreters>
+  </component>
+  <component name="PhpInterpretersPhpInfoCache">
+    <phpInfoCache>
+      <interpreter name="app">
+        <phpinfo binary_type="PHP" php_cgi="/usr/bin/php-cgi" php_cli="/usr/bin/php7" path_separator=":" version="7.4.14">
+          <additional_php_ini>/etc/php7/conf.d/00_apcu.ini, /etc/php7/conf.d/00_bcmath.ini, /etc/php7/conf.d/00_bz2.ini, /etc/php7/conf.d/00_calendar.ini, /etc/php7/conf.d/00_ctype.ini, /etc/php7/conf.d/00_curl.ini, /etc/php7/conf.d/00_exif.ini, /etc/php7/conf.d/00_gd.ini, /etc/php7/conf.d/00_gettext.ini, /etc/php7/conf.d/00_gmp.ini, /etc/php7/conf.d/00_iconv.ini, /etc/php7/conf.d/00_imagick.ini, /etc/php7/conf.d/00_imap.ini, /etc/php7/conf.d/00_intl.ini, /etc/php7/conf.d/00_json.ini, /etc/php7/conf.d/00_mbstring.ini, /etc/php7/conf.d/00_mongodb.ini, /etc/php7/conf.d/00_opcache.ini, /etc/php7/conf.d/00_openssl.ini, /etc/php7/conf.d/00_pcntl.ini, /etc/php7/conf.d/00_pcov.ini, /etc/php7/conf.d/00_pdo.ini, /etc/php7/conf.d/00_pdo_pgsql.ini, /etc/php7/conf.d/00_pdo_sqlite.ini, /etc/php7/conf.d/00_pgsql.ini, /etc/php7/conf.d/00_posix.ini, /etc/php7/conf.d/00_session.ini, /etc/php7/conf.d/00_sodium.ini, /etc/php7/conf.d/00_sqlite3.ini, /etc/php7/conf.d/00_xdebug.ini, /etc/php7/conf.d/00_xml.ini, /etc/php7/conf.d/00_zip.ini, /etc/php7/conf.d/00_zlib.ini, /etc/php7/conf.d/01_dom.ini, /etc/php7/conf.d/01_mysqlnd.ini, /etc/php7/conf.d/01_phar.ini, /etc/php7/conf.d/01_soap.ini, /etc/php7/conf.d/01_xmlreader.ini, /etc/php7/conf.d/01_xsl.ini, /etc/php7/conf.d/20_memcached.ini, /etc/php7/conf.d/20_mysqli.ini, /etc/php7/conf.d/20_pdo_mysql.ini, /etc/php7/conf.d/20_redis.ini</additional_php_ini>
+          <configuration_file>/etc/php7/php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".:" />
+          </configuration_options>
+          <debuggers />
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="Zend OPcache" />
+            <extension name="apcu" />
+            <extension name="bcmath" />
+            <extension name="bz2" />
+            <extension name="calendar" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="exif" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="gd" />
+            <extension name="gettext" />
+            <extension name="gmp" />
+            <extension name="hash" />
+            <extension name="iconv" />
+            <extension name="imagick" />
+            <extension name="imap" />
+            <extension name="intl" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="memcached" />
+            <extension name="mongodb" />
+            <extension name="mysqli" />
+            <extension name="mysqlnd" />
+            <extension name="openssl" />
+            <extension name="pcntl" />
+            <extension name="pcov" />
+            <extension name="pcre" />
+            <extension name="pdo_mysql" />
+            <extension name="pdo_pgsql" />
+            <extension name="pdo_sqlite" />
+            <extension name="pgsql" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="redis" />
+            <extension name="session" />
+            <extension name="soap" />
+            <extension name="sodium" />
+            <extension name="sqlite3" />
+            <extension name="standard" />
+            <extension name="tokenizer" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="xsl" />
+            <extension name="zip" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
+    </phpInfoCache>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>

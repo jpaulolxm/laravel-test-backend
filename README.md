@@ -1,3 +1,11 @@
+##@jpaulolxm
+Dicas para rodar e testar o app
+- docker-composer up -d --build
+- php artisan migrate
+- php artisan db:seed
+- php artisan test
+- npm run dev
+---------
 ### Sobre a Accordous
 ##### Não perca mais tempo com seus contratos.
 Somos uma empresa de tecnologia voltada a simplificação de processos burocráticos! Desde a concepção até a cobrança de contratos, seja ele de imóveis, acordo, prestação de serviços, entre outros.

@@ -54,10 +54,10 @@ class PropriedadeFormRequest extends FormRequest
     {
         return new PropriedadeDTO
                     ([
-                         'id'                 => $this->id,
-                         'id_user'            => auth()->id(),
+                         'id'                 => (int) $this->id,
+                         'id_user'            => (int) auth()->id(),
                          'email_proprietario' => $this->email_proprietario,
-                         'id_tipo'            => $this->tipo_imovel,
+                         'id_tipo'            => (int) $this->tipo_imovel,
                          'cep'                => $this->cep,
                          'endereco'           => $this->endereco,
                          'numero'             => $this->numero,
