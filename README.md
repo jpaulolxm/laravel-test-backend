@@ -1,6 +1,7 @@
 ##@jpaulolxm
 Dicas para rodar e testar o app
-- docker-composer up -d --build
+- docker-compose up -d --build
+- composer install
 - php artisan migrate
 - php artisan db:seed
 - php artisan test
