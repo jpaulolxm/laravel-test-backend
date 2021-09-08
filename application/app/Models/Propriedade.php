@@ -29,7 +29,7 @@ class Propriedade extends Model
         'id_user',
     ];
 
-    protected array $appends = ['tipo', 'status'];
+    protected $appends = ['tipo', 'status'];
 
     public function getTipoAttribute()
     {

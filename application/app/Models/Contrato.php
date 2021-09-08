@@ -26,7 +26,7 @@ class Contrato extends Model
         'created_at'  => 'date:d/m/Y H:i:s',
     ];
 
-    protected array $appends = ['tipo_pessoa'];
+    protected $appends = ['tipo_pessoa'];
 
     protected static function boot()
     {

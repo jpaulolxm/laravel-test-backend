@@ -55,7 +55,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected array $appends = [
+    protected $appends = [
         'profile_photo_url',
     ];
 }

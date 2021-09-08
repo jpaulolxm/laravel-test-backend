@@ -23,7 +23,7 @@ class Relatorio extends Model
         'created_at'  => 'date:d/m/Y H:i:s',
     ];
 
-    protected array $appends = ['status'];
+    protected $appends = ['status'];
 
 
 
