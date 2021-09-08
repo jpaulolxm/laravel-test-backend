@@ -181,8 +181,9 @@ export default {
     props:{
         errors       : Object,
         relatorios   : Object,
-        dataInicial  : '',
-        dataFinal    : '',
+        dataInicial  : String,
+        dataFinal    : String,
+        isProcess    : Boolean,
     },
     mounted()
     {
@@ -190,9 +191,25 @@ export default {
         this.formulario.dataFinal   = this.dataFinal;
 
     },
-    methods :
+    watch:
     {
+        isProcess:
+        {
+            immediate: true,
+            handler(newValue)
+            {
+                if(newValue)
+                {
+                    setTimeout(()=>{
 
+                        this.$inertia.get(route('relatorio.index'));
+
+                    }, 5000);
+
+                }
+
+            }
+        }
     }
 }
 </script>
