@@ -86,13 +86,15 @@
 
                                             </th>
 
+
+
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Status
+                                                Criado em
 
                                             </th>
 
                                             <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                Criado em
+                                                Status
 
                                             </th>
 
@@ -130,16 +132,18 @@
 
                                             <td class="px-6 py-4 whitespace-nowrap">
 
+                                                {{row.created_at}}
+                                            </td>
+
+                                            <td class="px-6 py-4 whitespace-nowrap">
+
                                                 <el-tag v-if="row.id_status === 1" type="warning" size="small" effect="dark">{{row.status}}</el-tag>
                                                 <el-tag v-if="row.id_status === 2" type="success" size="small" effect="dark">{{row.status}}</el-tag>
                                                 <el-tag v-if="row.id_status === 3" type="danger" size="small" effect="dark">{{row.status}}</el-tag>
 
                                             </td>
 
-                                            <td class="px-6 py-4 whitespace-nowrap">
 
-                                               {{row.created_at}}
-                                            </td>
 
                                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                 <a :href="route('relatorio.download',{id : row.id})" target="_blank" class="text-indigo-600 hover:text-indigo-900">Download</a>
