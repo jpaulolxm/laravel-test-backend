@@ -91,6 +91,11 @@
 
                                             </th>
 
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Criado em
+
+                                            </th>
+
                                             <th scope="col" class="relative px-6 py-3">
 
                                                 <inertia-link :href="route('relatorio.index')" class="float-right">
@@ -129,6 +134,11 @@
                                                 <el-tag v-if="row.id_status === 2" type="success" size="small" effect="dark">{{row.status}}</el-tag>
                                                 <el-tag v-if="row.id_status === 3" type="danger" size="small" effect="dark">{{row.status}}</el-tag>
 
+                                            </td>
+
+                                            <td class="px-6 py-4 whitespace-nowrap">
+
+                                               {{row.created_at}}
                                             </td>
 
                                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
