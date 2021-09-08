@@ -31,4 +31,9 @@ class Relatorio extends Model
     {
         return StatusRelatorioEnum::getName($this->id_status);
     }
+
+    public function user (): HasOne
+    {
+        return $this->hasOne(User::class, 'id','id_user');
+    }
 }

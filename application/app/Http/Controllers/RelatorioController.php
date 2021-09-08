@@ -18,7 +18,7 @@ class RelatorioController extends Controller
 {
   public function index(): Response
   {
-        $relatorios = Relatorio::orderBy('id', 'desc')->limit(10)->get();
+        $relatorios = Relatorio::with(['user'])->orderBy('id', 'desc')->limit(10)->get();
 
         return Inertia::render('Relatorio/Index',
                 [
