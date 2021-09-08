@@ -49,7 +49,7 @@ class PropriedadeController extends Controller
 
         if($search)
         {
-            $query->where('endereco', 'LIKE', "%{$search}%");
+            $query->orWhere('endereco', 'LIKE', "%{$search}%");
             $query->orwhere('email_proprietario', 'LIKE', "%{$search}%");
             $query->orWhere('bairro',   'LIKE', "%{$search}%");
             $query->orWhere('cidade',   'LIKE', "%{$search}%");

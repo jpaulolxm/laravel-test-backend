@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Propriedade;
+use App\Models\StatusPropriedadeEnum;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class PropriedadeFactory extends Factory
@@ -38,7 +39,7 @@ class PropriedadeFactory extends Factory
             'complemento'        => $this->faker->email(),
             'estado'             => $this->faker->state(),
             'cidade'             => $this->faker->city(),
-            'id_status'          => 1,
+            'id_status'          => StatusPropriedadeEnum::NAO_CONTRADO,
 
         ];
     }

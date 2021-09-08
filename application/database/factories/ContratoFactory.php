@@ -39,6 +39,7 @@ class ContratoFactory extends Factory
             $documento = $this->faker->cnpj();
         }
 
+
         return [
 
              'id_user'        => 1,
